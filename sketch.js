@@ -29,7 +29,9 @@ function setup() {
 function draw() {
   // put drawing code here
 
-  let imgRatio = img.width / img.height;
+  
+
+  let imgRatio =50/40;
   let canvasRatio = width / height ;
 
   let newWidth, newHeight;
@@ -68,7 +70,11 @@ function draw() {
   // Poi disegna il tooltip SOLO se il mouse è sopra un vulcano
   if (hoveredVolcano) {
     drawTooltip(hoveredVolcano.name, hoveredVolcano.location, hoveredVolcano.myX, hoveredVolcano.myY);
+
   }
+  
+
+
 }
 
 function drawTooltip(name, location, x, y) {
